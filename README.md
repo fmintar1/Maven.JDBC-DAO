@@ -1,4 +1,4 @@
-# JDBC - CRUD - DAO Lab
+# JDBC - CRUD - daos.DAO Lab
 
 Requirements
 
@@ -29,26 +29,26 @@ a _car_ table may have the fields for:
 Use Maven.com to get the sql-connector-java dependency. Add this to your pom.xml
 
 
-## Create DAO
+## Create daos.DAO
 
-Create a Java app that uses the DAO pattern to perform CRUD operations on you sql database 
-[DAO Pattern](https://dzone.com/articles/building-simple-data-access-layer-using-jdbc)
+Create a Java app that uses the daos.DAO pattern to perform CRUD operations on you sql database 
+[daos.DAO Pattern](https://dzone.com/articles/building-simple-data-access-layer-using-jdbc)
 
 These classes should include:
 
-1. A DAO abstract class or interface for the following methods
+1. A daos.DAO abstract class or interface for the following methods
     * public T findById(int id);
     * public List<T> findAll();
     * public T update(T dto);
     * public T create(T dto);
     * public  void delete(int id);
-2. A DAO concrete class that implements all the methods of the abstract or interface from the previous step
-3. A DTO interface with the following method stub
+2. A daos.DAO concrete class that implements all the methods of the abstract or interface from the previous step
+3. A models.DTO interface with the following method stub
     * int getId();
-4. A concrete DTO class that implements the interface.
+4. A concrete models.DTO class that implements the interface.
 
 ## Run the App
-Create an App runner class to run each CRUD operation against your DAO
+Create an App runner class to run each CRUD operation against your daos.DAO
 
 * findById()
 * findAll()
